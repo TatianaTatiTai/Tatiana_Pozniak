@@ -1,0 +1,9 @@
+div {
+    border-style:solid; 
+    border-width: 2.5em;  
+    width:80%;
+    border-image-source: url('../border/ramka.png') ;
+    border-image-slice: 100;
+    border-image-repeat: stretch; 
+    border-image-width: 2;
+}

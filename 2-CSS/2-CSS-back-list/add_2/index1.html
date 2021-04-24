@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title> 
+    <style>
+        .flex-raw {
+            display: flex;
+            flex-direction: raw;
+            background-color: rgb(220, 164, 247);
+        }
+        .flex-left {
+            background-color: rgb(156, 108, 189);
+            flex: 0 0 15em;
+            align-self: flex-start;
+            margin-bottom: .2em;
+        }
+        .flex-column{
+            display: flex;
+            flex-direction: column;
+            width: auto;
+        }
+        .flex-stat1{
+            margin-bottom: .2em;
+            background-color: rgb(190, 94, 245);
+            overflow: hidden;
+        }
+        .flex-stat2{
+            margin-bottom: .2em;
+            background-color: rgb(164, 84, 240);
+            overflow: hidden;
+        }  
+        .footer{
+            background-color: rgb(123, 60, 175);
+        } 
+        .img{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-raw">
+
+        <div class="flex-left"><h3>Блок навигации</h3> 
+            <ul>
+                <li>Ширина 15 см</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+            </ul>
+        </div>
+
+        <div class="flex-column">
+            <div class="flex-stat1"><h3>Статья 1</h3>
+                Размер блока:<br>
+                Заполняет всю доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным. 2см, при помощи свойства margin-bottom
+            </div>
+
+            <div class="flex-stat2"><h3>Статья 2</h3>
+                Размер блока:<br>
+                Заполняет всю доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                <img src="icon_mail.png" alt="mail" class="img">
+                Во всех "статьях" сделайте отступ снизу от соседей равным. 2см, при помощи свойства margin-bottom Картинка вставлена при помощи тега, плавание организовано по правому краювнутри данной статьи для этой картинки.
+            </div>
+        </div>
+    </div>
+
+<div class="footer">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.</div>
+
+</body>
+</html>

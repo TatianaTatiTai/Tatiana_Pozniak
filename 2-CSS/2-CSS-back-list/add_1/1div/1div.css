@@ -1,0 +1,13 @@
+div {
+    background: 
+    url('../border/t-l.gif') no-repeat top left,
+    url('../border/t-r.gif') no-repeat top right,
+    url('../border/b-l.gif') no-repeat bottom left,
+    url('../border/b-r.gif') no-repeat bottom right,
+    url('../border/l.gif') repeat-y left,  
+    url('../border/t.gif') repeat-x top, 
+    url('../border/r.gif') repeat-y right, 
+    url('../border/b.gif') repeat-x bottom;
+    width:80%; 
+    padding:2.5em;
+}

@@ -1,0 +1,39 @@
+.menu ul li{
+    display: inline-block;
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-color: black;
+    border-radius: 3px;
+    width: 150px;
+    position: relative;
+}
+.menu li ul{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    margin: 0; 
+    padding-left: 0;
+    transition-property: opacity, visability;
+    transition-duration: 3s;
+    transition-delay: 0.1s;
+}
+.menu li:hover{
+    background-color: lightslategray;
+}
+.menu li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+@media (max-width: 628px){
+    .menu > ul {
+        display: flex;
+        flex-flow: column;
+    }
+    .menu li:hover > ul {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+        position: relative;
+    }
+}

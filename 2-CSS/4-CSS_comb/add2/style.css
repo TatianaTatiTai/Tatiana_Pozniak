@@ -1,0 +1,130 @@
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+table td{
+    border: 2px solid black;
+    width: 60px;
+    height: 60px;
+}
+table tr:nth-child(odd) td:nth-child(even){
+    background-color: black;
+}
+table tr:nth-child(even) td:nth-child(odd){
+    background-color: black;
+}
+
+tr:nth-child(1){
+    counter-reset: list1 66 list2 65;
+}
+tr:nth-child(1) td:nth-child(odd):before {
+    counter-increment: list1 -2;
+    content: counter(list1);
+    font-size: larger;
+    padding: 20px;
+    }
+tr:nth-child(1) td:nth-child(even):before {
+    counter-increment: list2 -2;
+    content: counter(list2);
+    color: white;
+    font-size: larger;
+    padding: 20px;
+    }
+
+tr:nth-child(2) td:nth-child(odd):before {
+    counter-increment: list1 -2;
+    content: counter(list1);
+    color: white;
+    font-size: larger;
+    padding: 20px;
+    }
+tr:nth-child(2) td:nth-child(even):before {
+    counter-increment: list2 -2;
+    content: counter(list2);
+    font-size: larger;
+    padding: 20px;
+    }
+
+tr:nth-child(3) td:nth-child(odd):before {
+    counter-increment: list1 -2;
+    content: counter(list1);
+    font-size: larger;
+    padding: 20px;
+    }
+tr:nth-child(3) td:nth-child(even):before {
+    counter-increment: list2 -2;
+    content: counter(list2);
+    color: white;
+    font-size: larger;
+    padding: 20px;
+    }
+
+tr:nth-child(4) td:nth-child(odd):before {
+    counter-increment: list1 -2;
+    content: counter(list1);    
+    color: white;
+    font-size: larger;
+    padding: 20px;
+    }
+tr:nth-child(4) td:nth-child(even):before {
+    counter-increment: list2 -2;
+    content: counter(list2);
+    font-size: larger;
+    padding: 20px;
+    }
+
+tr:nth-child(5) td:nth-child(odd):before {
+    counter-increment: list1 -2;
+    content: counter(list1);
+    font-size: larger;
+    padding: 20px;
+    }
+tr:nth-child(5) td:nth-child(even):before {
+    counter-increment: list2 -2;
+    content: counter(list2);
+    color: white;
+    font-size: larger;
+    padding: 20px;
+    }
+
+tr:nth-child(6) td:nth-child(odd):before {
+    counter-increment: list1 -2;
+    content: counter(list1);    
+    color: white;
+    font-size: larger;
+    padding: 20px;
+    }
+tr:nth-child(6) td:nth-child(even):before {
+    counter-increment: list2 -2;
+    content: counter(list2);
+    font-size: larger;
+    padding: 20px;
+    }
+
+tr:nth-child(7) td:nth-child(odd):before {
+    counter-increment: list1 -2;
+    content: counter(list1);
+    font-size: larger;
+    padding: 20px;
+    }
+tr:nth-child(7) td:nth-child(even):before {
+    counter-increment: list2 -2;
+    content: counter(list2);
+    color: white;
+    font-size: larger;
+    padding: 20px;
+    }
+
+tr:nth-child(8) td:nth-child(odd):before {
+    counter-increment: list1 -2;
+    content: counter(list1);    
+    color: white;
+    font-size: larger;
+    padding: 20px;
+    }
+tr:nth-child(8) td:nth-child(even):before {
+    counter-increment: list2 -2;
+    content: counter(list2);
+    font-size: larger;
+    padding: 20px;
+    }

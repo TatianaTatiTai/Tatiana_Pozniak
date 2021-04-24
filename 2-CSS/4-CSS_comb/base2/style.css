@@ -1,0 +1,48 @@
+body {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+table {
+    width: 100%; 
+    border-collapse: collapse;   
+}
+table td, th{
+    border: 2px solid gray;
+    border-style: dashed;
+}
+table tr:first-child th{
+    background-color: gray;
+    border: 2px solid gray;
+    color: white;
+} 
+table tr:hover{
+    font-style:italic;
+    cursor: pointer;
+}
+
+table tr:nth-child(2n+1){
+    background-color: rgb(197, 195, 195);
+} 
+caption{
+    caption-side: bottom;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase
+}
+table tr:nth-child(2) th{
+    text-align: left;
+}
+table tr:nth-child(3) th{
+    text-align: left;
+}
+table tr:nth-child(4) th{
+    text-align: left;
+}
+table tr:nth-child(5) th{
+    text-align: left;
+}
+table tr:nth-child(6) th{
+    text-align: left;
+}
+
+
